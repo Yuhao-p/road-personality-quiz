@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>道路人格測驗</title>
-<meta name="description" content="九題測出你的道路人格：步行、單車、共享運具、機車、汽車、大眾運輸。" />
+<meta name="description" content="十二題測出你的道路人格：步行、單車、共享運具、機車、汽車、大眾運輸。" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Chivo+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" />
@@ -87,6 +92,8 @@
 
   body {
     margin: 0;
+    min-height: 100dvh;
+    display: flex;
     background: var(--ground);
     color: var(--ink);
     font-family: var(--font-body);
@@ -95,9 +102,10 @@
   }
 
   .app {
+    width: 100%;
     max-width: 468px;
-    margin: 0 auto;
-    padding: clamp(20px, 6vw, 40px) clamp(14px, 4vw, 20px) 56px;
+    margin: auto;
+    padding: clamp(20px, 6vw, 40px) clamp(14px, 4vw, 20px) clamp(28px, 8vw, 56px);
   }
 
   /* ---------- masthead ---------- */
@@ -468,6 +476,8 @@
     .view { animation: none; }
   }
 </style>
+</head>
+<body>
 
 <div class="app">
   <div class="mast">
@@ -842,3 +852,5 @@
 
   renderStart();
 </script>
+</body>
+</html>
